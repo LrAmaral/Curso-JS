@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body{
+            background-color: rgb(129, 82, 173); 
+            color: aliceblue; /* comentário em css */
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:rgb(24, 2, 4)
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--  comentario em HTML -->
+    <p>Me livrei da maldição!</p>
+    <script> 
+       var n1 = Number (window.prompt ("Digite o primeiro numero: ")); // NumberparseInt para forçar inteiros
+       var n2 = Number (window.prompt ("Digite o segundo numero: ")); // NumberparseFloat para forçar pontos fluantes/reais
+
+      
+       window.alert("O primeiro numero digitado foi: " + n1);
+       window.alert("O segundo numero digitado foi: "  + n2);
+       var s = n1 + n2;
+       var x = n1 - n2;
+       var z = n1 * n2;
+       var c = n1 / n2;
+       
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); //template string para number
+       window.alert("A subtração desses valores é: " + x);
+       window.alert("A multiplicação desses valores é: " + z);
+       window.alert("A divisão desses valores é: " + c);
+        
+      
+       // sinal de '+' serve para adição e também concatenação
+       // (number + number) para adição
+       // (string + string) ele faz concatenação
+       // Realizar a conversão de string para números inteiros (Number.parseInt(n)), converter para numeros reais (Number.parseFloat(n))
+       // Number (n) é uma sintaxe atual que identifica qualquer numero por si próprio, seja ele inteiro ou rea.
+       // Conversão de string para número, String(n) ou n.toString()
+       //s.length quantos caracteres possui a string
+       //s.toUpperCase() tudo para maíusculas
+       //s.toLowerCase() tudo para minúsculas
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id="resS">ResSoma</div>
+    <div id="resM">ResMulti</div>
+    <div id="resD">ResDiv</div>
+    <div id="resSD">ResSD</div>
+
+    <script>
+
+        function calcular () {
+            var tn1 = window.document.getElementById('txtn1');
+            var tn2 = window.document.querySelector('Input#txtn2'); //id representado por #
+            var res = window.document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 + n2;
+            var x = n1 * n2;
+            if (n1 != 0 && n2 != 0) {
+                var y = n1 / n2;
+            } else {
+                document.write('Não é possível dividir por zero');
+            }
+            if (n1 != 0 && n2 != 0) {
+                var z = (n1 + n2) / 2;
+            } else {
+                document.write('Não é possível dividir por zero');
+            }
+
+            resS.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`;
+            resM.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a ${x}`;
+            resD.innerHTML = `A divisão entre ${n1} e ${n2} é igual a ${y.toFixed(2)}`;
+            resSD.innerHTML = `A soma de ${n1} e ${n2} dividido por 2 é igual a <strong>${z}</strong>`;
+        }
+
+    </script>
+
+</body>
+</html>
