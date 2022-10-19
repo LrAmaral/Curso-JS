@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAÍS</title>
+    <style>
+        body {
+            background: rgb(199, 109, 116);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+
+    <input type="text" name="txtp1" id="txtp1">
+    <input type="button" value="Verificar" onclick="consulta()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function consulta () {
+            var txtp = window.document.querySelector('input#txtp1');
+            var res = window.document.querySelector('div#res');
+            var p = String(txtp.value); //Valor textual para string
+ 
+            res.innerHTML = (`Vivendo em ` + p);
+
+            if (p != `Brasil`) { 
+                res.innerHTML = `<p>Você é <strong>Estrangeiro!</strong></p>`; 
+            }
+            else {
+                res.innerHTML = `<p>Você é <strong>Brasileiro!</strong></p>`;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
