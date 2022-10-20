@@ -40,16 +40,17 @@
             var n2 = Number(tn2.value);
             var s = n1 + n2;
             var x = n1 * n2;
+            var z = (n1 + n2) / 2;
+            
             if (n1 != 0 && n2 != 0) {
                 var y = n1 / n2;
-            } else {
-                document.write('Não é possível dividir por zero');
+                //var z = (n1 + n2) / 2;
+            } 
+            
+            else {
+                resD.innerHTML = 'Não é possível dividir por zero';
             }
-            if (n1 != 0 && n2 != 0) {
-                var z = (n1 + n2) / 2;
-            } else {
-                document.write('Não é possível dividir por zero');
-            }
+
 
             resS.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`;
             resM.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a ${x}`;
