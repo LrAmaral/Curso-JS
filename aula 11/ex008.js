@@ -1,5 +1,5 @@
 //console.log('O console funcionou corretamente!'); 
-
+//ctrl + shift + n para executar
 //console é utilizado em arquivos javascript
 
 //Condições Simples

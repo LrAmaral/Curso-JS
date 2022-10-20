@@ -1,4 +1,5 @@
 //Condições Compostas
+//ctrl + shift + n para executar
 
 var país = 'Brasil'; 
 console.log(`Vivendo em ${país}`);
