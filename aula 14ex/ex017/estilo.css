@@ -8,11 +8,10 @@ header {
     text-align: center;
 }
 
-/*img{
-    width: 250px;  
-    height: 250px;
-    border-radius: 50%;
-}*/
+img {
+    width: 350px;
+
+}
 
 section {
     background: white;
