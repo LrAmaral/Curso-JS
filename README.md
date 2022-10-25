@@ -1,13 +1,13 @@
 # Curso-JS
 
-Some exercises to practice JavaScript ☕
+Curso introdutório a linguagem de programação JavaScript ☕
 <br>
 
 ##
 
-Introduction
+Introdução
 
-Practicing codes by following the teaching of the playlist about JavaScript, created by Youtube Channel "Curso em Vídeo" , I honestly to recommend to watch they.
+Curso para iniciante em Java Script criado pelo canal "Curso em video", com conceitos demonstrados de forma prática e exercícios propostos para fixação do aprendizado.
 
 ##
 
